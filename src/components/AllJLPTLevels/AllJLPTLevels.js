@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavBar from "../Navbar/Navbar";
 
 const AllJLPTLevels = () => {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/AllLevels">All JLPT Levels</Link>
-      </nav>
+      <NavBar />
       <h1>ALL JLPT Levels</h1>;
     </>
   );
