@@ -25,27 +25,27 @@ const AllJLPTLevels = () => {
         <Grid container spacing={5}>
           <Grid item xs>
             <Item>
-              <LevelCard />
+              <LevelCard level="N1" japDescription="能力試験N1レベル漢字" />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard />
+              <LevelCard level="N2" japDescription="能力試験N2レベル漢字" />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard />
+              <LevelCard level="N3" japDescription="能力試験N3レベル漢字" />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard />
+              <LevelCard level="N4" japDescription="能力試験N4レベル漢字" />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard />
+              <LevelCard level="N5" japDescription="能力試験N5レベル漢字" />
             </Item>
           </Grid>
         </Grid>

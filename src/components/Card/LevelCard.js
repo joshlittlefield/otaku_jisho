@@ -12,19 +12,15 @@ const LevelCard = (props) => {
       <Card variant="outlined">
         <CardContent>
           <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-            JLPT LEVEL
+            JLPT LEVEL {props.level}
           </Typography>
           <Typography variant="h5" component="div">
             KANJI
           </Typography>
           <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            adjective
+            {props.japDescription}
           </Typography>
-          <Typography variant="body2">
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
-          </Typography>
+          <Typography variant="body2">Number of Kanji -</Typography>
         </CardContent>
         <CardActions>
           <Button size="small">SELECT</Button>
