@@ -4,18 +4,18 @@ import { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 
 import NavBar from "../Navbar/Navbar";
-import KanjiCard from "../Card/KanjiCard";
+import KanjiCard from "./KanjiCard";
 
-const N1 = () => {
+const SingleKanjiCard = (props) => {
   let params = useParams();
-  const [selectedLevel, setSelectedLevel] = useState(null);
-  const [Level, setLevel] = useState([]);
-  const [levelKanji, setLevelKanji] = useState([]);
+  const singleKanjiURL = props.singleKanjiURL;
+
+  const [singleKanji, setSingleKanji] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     let kanjiData = [];
-    fetch(`https://kanjiapi.dev/v1/kanji/grade-1`)
+    fetch({ singleKanjiURL })
       .then((response) => {
         return response.json();
       })
@@ -23,10 +23,10 @@ const N1 = () => {
         console.log(data);
         kanjiData = data;
 
-        setLevelKanji(kanjiData);
+        setSingleKanji(kanjiData);
       })
       .catch((error) => console.log(error.message));
-  }, [params]);
+  }, [singleKanjiURL]);
 
   return (
     <>
@@ -34,12 +34,10 @@ const N1 = () => {
       <h1>N1</h1>
       <div>Kanji goes here</div>
       <div>
-        {levelKanji.map((kanji) => {
-          return <KanjiCard key={kanji} singleKanji={kanji} />;
-        })}
+        <h1>{singleKanji}</h1>
       </div>
     </>
   );
 };
 
-export default N1;
+export default SingleKanjiCard;

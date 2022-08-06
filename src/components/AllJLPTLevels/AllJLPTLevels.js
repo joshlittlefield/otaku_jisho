@@ -1,8 +1,10 @@
+import * as React from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
+
 import NavBar from "../Navbar/Navbar";
 import LevelCard from "../Card/LevelCard";
 
-import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
@@ -25,27 +27,52 @@ const AllJLPTLevels = () => {
         <Grid container spacing={5}>
           <Grid item xs>
             <Item>
-              <LevelCard level="N1" japDescription="能力試験N1レベル漢字" />
+              <LevelCard
+                level="N1"
+                japDescription="能力試験N1レベル漢字"
+                noOfKanji="80"
+                gradeURL={"grade-1"}
+              />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard level="N2" japDescription="能力試験N2レベル漢字" />
+              <LevelCard
+                level="N2"
+                japDescription="能力試験N2レベル漢字"
+                noOfKanji="160"
+                gradeURL="grade-2"
+              />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard level="N3" japDescription="能力試験N3レベル漢字" />
+              <LevelCard
+                level="N3"
+                japDescription="能力試験N3レベル漢字"
+                noOfKanji="200"
+                gradeURL="grade-3"
+              />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard level="N4" japDescription="能力試験N4レベル漢字" />
+              <LevelCard
+                level="N4"
+                japDescription="能力試験N4レベル漢字"
+                noOfKanji="200"
+                gradeURL="grade-4"
+              />
             </Item>
           </Grid>
           <Grid item xs>
             <Item>
-              <LevelCard level="N5" japDescription="能力試験N5レベル漢字" />
+              <LevelCard
+                level="N5"
+                japDescription="能力試験N5レベル漢字"
+                noOfKanji="185"
+                gradeURL="grade-5"
+              ></LevelCard>
             </Item>
           </Grid>
         </Grid>
