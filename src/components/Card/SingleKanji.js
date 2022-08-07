@@ -1,16 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { useState, useEffect, useCallback } from "react";
-import { useParams } from "react-router-dom";
+
 import { useLocation } from "react-router-dom";
 
-import NavBar from "../Navbar/Navbar";
-import KanjiCard from "./KanjiCard";
-import N1 from "../JLPTLevel/N1";
+import NavBar from "../Navbar/NavBar";
+
 import SingleKanjiCard from "../Card/SingleKanjiCard";
 
 const SingleKanji = () => {
-  let params = useParams();
   const location = useLocation();
 
   const singleKanji = location.state.oneKanji;

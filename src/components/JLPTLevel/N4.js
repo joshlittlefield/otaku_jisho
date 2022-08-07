@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 
-import NavBar from "../Navbar/Navbar";
+import NavBar from "../Navbar/NavBar";
 import KanjiCard from "../Card/KanjiCard";
 
 const N4 = () => {

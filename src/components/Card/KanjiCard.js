@@ -33,10 +33,10 @@ const KanjiCard = (props) => {
           navigate(`/SingleKanji`, { state: { oneKanji } });
         }}
       >
-        <Box sx={{ minWidth: 275 }}>
+        <Box sx={{ minWidth: 50 }}>
           <Card variant="outlined">
             <CardContent>
-              <Typography variant="h5" component="div">
+              <Typography variant="h3" component="div">
                 {oneKanji}
               </Typography>
             </CardContent>

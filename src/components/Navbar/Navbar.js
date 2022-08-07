@@ -1,17 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import * as React from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
-const NavBar = () => {
+export default function NavBar() {
+  const navigate = useNavigate();
+  const [value, setValue] = useState("");
+
+  const handleChange = (event, value) => {
+    setValue(value);
+    if (value === "Home") {
+      navigate(`/`);
+    } else {
+      navigate(`/${value}`);
+    }
+  };
+
   return (
-    <>
-      <nav>
-        <Link to="/">Home</Link> | <Link to="/AllLevels">All JLPT Levels</Link>{" "}
-        | <Link to="/N1">N1</Link> | <Link to="/N2">N2</Link> |{" "}
-        <Link to="/N3">N3</Link> | <Link to="/N4">N4</Link> |{" "}
-        <Link to="/N5">N5</Link>
-      </nav>
-    </>
+    <Box sx={{ width: "100%" }}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        textColor="secondary"
+        indicatorColor="secondary"
+        aria-label="nav tabs example"
+      >
+        <Tab value="Home" label="Home" />
+        <Tab value="AllLevels" label="All Levels" />
+        <Tab value="N1" label="N1" />
+        <Tab value="N2" label="N2" />
+        <Tab value="N3" label="N3" />
+        <Tab value="N4" label="N4" />
+        <Tab value="N5" label="N5" />
+      </Tabs>
+    </Box>
   );
-};
-
-export default NavBar;
+}

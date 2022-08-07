@@ -16,15 +16,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="AllLevels" element={<AllJLPTLevels />} />
-        <Route path="JLPTLevel" gradeURL="levelURL" element={<JLPTLevel />} />
-        <Route path="N1" element={<N1 />} />
-        <Route path="SingleKanji" element={<SingleKanji />} />
+        <Route path="/AllLevels" element={<AllJLPTLevels />} />
+        <Route path="/JLPTLevel" gradeURL="levelURL" element={<JLPTLevel />} />
+        <Route path="/N1" element={<N1 />} />
+        <Route path="/SingleKanji" element={<SingleKanji />} />
 
-        <Route path="N2" element={<N2 />} />
-        <Route path="N3" element={<N3 />} />
-        <Route path="N4" element={<N4 />} />
-        <Route path="N5" element={<N5 />} />
+        <Route path="/N2" element={<N2 />} />
+        <Route path="/N3" element={<N3 />} />
+        <Route path="/N4" element={<N4 />} />
+        <Route path="/N5" element={<N5 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

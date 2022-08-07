@@ -1,8 +1,6 @@
 import * as React from "react";
-import { useState, useEffect, useCallback } from "react";
-import { Link } from "react-router-dom";
 
-import NavBar from "../Navbar/Navbar";
+import NavBar from "../Navbar/NavBar";
 import LevelCard from "../Card/LevelCard";
 
 import { styled } from "@mui/material/styles";
@@ -22,7 +20,7 @@ const AllJLPTLevels = () => {
   return (
     <>
       <NavBar />
-      <h1>ALL JLPT Levels</h1>;
+      <h1>ALL Japanese Kanji Levels</h1>;
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={5}>
           <Grid item xs>
