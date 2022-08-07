@@ -31,7 +31,7 @@ const N2 = () => {
   return (
     <>
       <NavBar />
-      <h1>N2</h1>
+      <h1 className="pageTitle">N2</h1>
 
       <div>
         {levelKanji.map((kanji) => {

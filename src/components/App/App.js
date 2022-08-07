@@ -10,6 +10,7 @@ import N3 from "../JLPTLevel/N3";
 import N4 from "../JLPTLevel/N4";
 import N5 from "../JLPTLevel/N5";
 import SingleKanji from "../Card/SingleKanji";
+import "./App.css";
 
 function App() {
   return (

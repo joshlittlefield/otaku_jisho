@@ -19,7 +19,7 @@ export default function NavBar() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box className="navbar" sx={{ width: "100%" }}>
       <Tabs
         value={value}
         onChange={handleChange}

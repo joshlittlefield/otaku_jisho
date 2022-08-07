@@ -1,12 +1,9 @@
 import React from "react";
-
-import { useState, useEffect, useCallback } from "react";
-
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
 import NavBar from "../Navbar/NavBar";
-
 import SingleKanjiCard from "../Card/SingleKanjiCard";
+import "../App/App.css";
 
 const SingleKanji = () => {
   const location = useLocation();
@@ -36,7 +33,7 @@ const SingleKanji = () => {
   return (
     <>
       <NavBar />
-      <h1>N{oneKanji.jlpt}</h1>
+      <h1 className="pageTitle">N{oneKanji.jlpt}</h1>
 
       <div>
         <SingleKanjiCard

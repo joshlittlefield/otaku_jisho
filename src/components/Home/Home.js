@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../Navbar/NavBar";
+import "../App/App.css";
 
 const Home = () => {
   return (
     <div>
       <NavBar />
-      <h1>Welcome Home Padawan</h1>
+      <h1 className="pageTitle">Welcome to the OtakuJisho</h1>
+      <h2 className="pageTitle">A Kanji resource</h2>
     </div>
   );
 };

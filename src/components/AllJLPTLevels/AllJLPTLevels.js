@@ -7,6 +7,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import "../App/App.css";
 
 const AllJLPTLevels = () => {
   const Item = styled(Paper)(({ theme }) => ({
@@ -20,7 +21,7 @@ const AllJLPTLevels = () => {
   return (
     <>
       <NavBar />
-      <h1>ALL Japanese Kanji Levels</h1>;
+      <h1 className="pageTitle">ALL Japanese Kanji Levels</h1>;
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={5}>
           <Grid item xs>
