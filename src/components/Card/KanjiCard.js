@@ -7,27 +7,37 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { useState, useEffect, useCallback } from "react";
 
 import N1 from "../JLPTLevel/N1";
 
 const KanjiCard = (props) => {
+  const [singleKanji, setSingleKanji] = useState([]);
+  const [singleKanjiURL, setSingleKanjiURL] = useState([]);
+  const [error, setError] = useState(null);
+
   let params = useParams();
-  const singleKanjiURL = `https://kanjiapi.dev/v1/kanji/${props.singleKanji}`;
+  const singleURL = `https://kanjiapi.dev/v1/kanji/${props.singleKanji}`;
+  const oneKanji = props.singleKanji;
   const navigate = useNavigate();
+
   return (
     <>
       <button
-        className={"LevelCard"}
-        url={singleKanjiURL}
+        className={"KanjiCard"}
+        url={`https://kanjiapi.dev/v1/kanji/${oneKanji}`}
+        kanji={oneKanji}
         onClick={() => {
-          navigate(`/SingleKanji`);
+          setSingleKanji(oneKanji);
+          setSingleKanjiURL(singleURL);
+          navigate(`/SingleKanji`, { state: { oneKanji } });
         }}
       >
         <Box sx={{ minWidth: 275 }}>
           <Card variant="outlined">
             <CardContent>
               <Typography variant="h5" component="div">
-                {props.singleKanji}
+                {oneKanji}
               </Typography>
             </CardContent>
           </Card>

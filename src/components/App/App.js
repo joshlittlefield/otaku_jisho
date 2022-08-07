@@ -9,7 +9,7 @@ import N2 from "../JLPTLevel/N2";
 import N3 from "../JLPTLevel/N3";
 import N4 from "../JLPTLevel/N4";
 import N5 from "../JLPTLevel/N5";
-import SingleKanjiCard from "../Card/SingleKanjiCard";
+import SingleKanji from "../Card/SingleKanji";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="AllLevels" element={<AllJLPTLevels />} />
         <Route path="JLPTLevel" gradeURL="levelURL" element={<JLPTLevel />} />
         <Route path="N1" element={<N1 />} />
-        <Route path="SingleKanji" element={<SingleKanjiCard />} />
+        <Route path="SingleKanji" element={<SingleKanji />} />
 
         <Route path="N2" element={<N2 />} />
         <Route path="N3" element={<N3 />} />

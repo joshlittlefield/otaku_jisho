@@ -32,7 +32,7 @@ const N1 = () => {
     <>
       <NavBar />
       <h1>N1</h1>
-      <div>Kanji goes here</div>
+
       <div>
         {levelKanji.map((kanji) => {
           return <KanjiCard key={kanji} singleKanji={kanji} />;

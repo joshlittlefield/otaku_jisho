@@ -1,43 +1,42 @@
-import React from "react";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import { useState, useEffect, useCallback } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import NavBar from "../Navbar/Navbar";
-import KanjiCard from "./KanjiCard";
-
-const SingleKanjiCard = (props) => {
-  let params = useParams();
-  const singleKanjiURL = props.singleKanjiURL;
-
-  const [singleKanji, setSingleKanji] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    let kanjiData = [];
-    fetch({ singleKanjiURL })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        kanjiData = data;
-
-        setSingleKanji(kanjiData);
-      })
-      .catch((error) => console.log(error.message));
-  }, [singleKanjiURL]);
-
+const LevelCard = (props) => {
   return (
     <>
-      <NavBar />
-      <h1>N1</h1>
-      <div>Kanji goes here</div>
-      <div>
-        <h1>{singleKanji}</h1>
-      </div>
+      <Box sx={{ minWidth: 275 }}>
+        <Card variant="outlined">
+          <CardContent>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="text.secondary"
+              gutterBottom
+            >
+              JLPT Level {props.jlpt} | SCHOOL Grade - {props.grade}
+            </Typography>
+            <Typography variant="h3" component="div">
+              {props.kanji}
+            </Typography>
+            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+              {props.meanings}
+            </Typography>
+            <Typography variant="body2">
+              Kun Reading - {props.kun}
+              On Reading - {props.on}
+            </Typography>
+          </CardContent>
+          <CardActions></CardActions>
+        </Card>
+      </Box>
     </>
   );
 };
 
-export default SingleKanjiCard;
+export default LevelCard;
