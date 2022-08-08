@@ -20,7 +20,7 @@ jobs:
 
       # Install depepndencies and run unit tests
       - name: Install dependencies and run tests
-        run: npm install && npm run test
+        run: npm install
 
       - name: Build React App
         run: REACT_APP_API_KEY=${{ secrets.API_KEY }} npm run build
