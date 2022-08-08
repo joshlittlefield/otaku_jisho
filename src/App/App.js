@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AllJLPTLevels from "../AllJLPTLevels/AllJLPTLevels";
-import Home from "../Home/Home";
-import NotFound from "../NotFound/NotFound";
-import JLPTLevel from "../JLPTLevel/JLPTLevel";
-import N1 from "../JLPTLevel/N1";
-import N2 from "../JLPTLevel/N2";
-import N3 from "../JLPTLevel/N3";
-import N4 from "../JLPTLevel/N4";
-import N5 from "../JLPTLevel/N5";
-import SingleKanji from "../Card/SingleKanji";
+import AllJLPTLevels from "../components/AllJLPTLevels/AllJLPTLevels";
+import Home from "../components/Home/Home";
+import NotFound from "../components/NotFound/NotFound";
+import JLPTLevel from "../components/JLPTLevel/JLPTLevel";
+import N1 from "../components/JLPTLevel/N1";
+import N2 from "../components/JLPTLevel/N2";
+import N3 from "../components/JLPTLevel/N3";
+import N4 from "../components/JLPTLevel/N4";
+import N5 from "../components/JLPTLevel/N5";
+import SingleKanji from "../components/Card/SingleKanji";
 import "./App.css";
 
 function App() {

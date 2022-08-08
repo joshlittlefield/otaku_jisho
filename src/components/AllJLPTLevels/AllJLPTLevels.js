@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../App/App.css";
+import "../../App/App.css";
 import NavBar from "../NavBar/NavBar";
 import LevelCard from "../Card/LevelCard";
 

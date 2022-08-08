@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import SingleKanjiCard from "../Card/SingleKanjiCard";
-import "../App/App.css";
+import "../../App/App.css";
 
 const SingleKanji = () => {
   const location = useLocation();
