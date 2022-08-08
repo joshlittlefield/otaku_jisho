@@ -10,7 +10,6 @@ const SingleKanji = () => {
 
   const singleKanji = location.state.oneKanji;
   const [oneKanji, setOneKanji] = useState([]);
-  const [error, setError] = useState(null);
   console.log(singleKanji);
 
   useEffect(() => {
