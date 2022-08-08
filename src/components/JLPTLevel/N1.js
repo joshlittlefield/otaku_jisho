@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import NavBar from "../NavBar/NavBar";
+import NavigationBar from "../NavigationBar/NavigationBar";
 import KanjiCard from "../Card/KanjiCard";
 
 const N1 = () => {
@@ -28,7 +28,7 @@ const N1 = () => {
 
   return (
     <>
-      <NavBar />
+      <NavigationBar />
       <h1 className="pageTitle">N1</h1>
 
       <div>

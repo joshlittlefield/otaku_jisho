@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import NavBar from "../NavBar/NavBar";
+import NavigationBar from "../NavigationBar/NavigationBar";
 import KanjiCard from "../Card/KanjiCard";
 
 const N4 = () => {
@@ -27,7 +27,7 @@ const N4 = () => {
 
   return (
     <>
-      <NavBar />
+      <NavigationBar />
       <h1 className="pageTitle">N4</h1>
 
       <div>

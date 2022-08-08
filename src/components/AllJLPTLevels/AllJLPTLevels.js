@@ -1,6 +1,6 @@
 import * as React from "react";
 import "../../App/App.css";
-import NavBar from "../NavBar/NavBar";
+import NavigationBar from "../NavigationBar/NavigationBar";
 import LevelCard from "../Card/LevelCard";
 
 import { styled } from "@mui/material/styles";
@@ -19,7 +19,7 @@ const AllJLPTLevels = () => {
 
   return (
     <>
-      <NavBar />
+      <NavigationBar />
       <h1 className="pageTitle">ALL Japanese Kanji Levels</h1>;
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={5}>

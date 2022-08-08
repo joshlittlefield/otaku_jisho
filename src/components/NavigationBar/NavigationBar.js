@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavigationBar = () => {
   const navigate = useNavigate();
   const [value, setValue] = useState("");
 
@@ -19,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <Box className="navbar" sx={{ width: "100%" }}>
+    <Box className="Navbar" sx={{ width: "100%" }}>
       <Tabs
         value={value}
         onChange={handleChange}
@@ -38,4 +38,4 @@ const NavBar = () => {
     </Box>
   );
 };
-export default NavBar;
+export default NavigationBar;
