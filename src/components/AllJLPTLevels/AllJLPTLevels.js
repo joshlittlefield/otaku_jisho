@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import NavBar from "../Navbar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import LevelCard from "../Card/LevelCard";
 
 import { styled } from "@mui/material/styles";

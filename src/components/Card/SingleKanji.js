@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import NavBar from "../Navbar/NavBar";
+import NavBar from "../NavBar/NavBar";
 import SingleKanjiCard from "../Card/SingleKanjiCard";
 import "../App/App.css";
 
