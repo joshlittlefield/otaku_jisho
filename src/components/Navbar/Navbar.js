@@ -1,11 +1,11 @@
-import * as React from "react";
+import React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-export default function NavBar() {
+const NavBar = () => {
   const navigate = useNavigate();
   const [value, setValue] = useState("");
 
@@ -37,4 +37,5 @@ export default function NavBar() {
       </Tabs>
     </Box>
   );
-}
+};
+export default NavBar;

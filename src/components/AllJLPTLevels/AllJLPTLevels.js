@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import "../App/App.css";
 import NavBar from "../NavBar/NavBar";
 import LevelCard from "../Card/LevelCard";
 
@@ -7,7 +7,6 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import "../App/App.css";
 
 const AllJLPTLevels = () => {
   const Item = styled(Paper)(({ theme }) => ({
